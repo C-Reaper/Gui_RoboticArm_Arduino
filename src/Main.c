@@ -14,7 +14,7 @@ int sock = 0;
 struct sockaddr_in serv_addr;
 Scene scene;
 
-void Slider1_React(Slider* s,SliderEvent* se){
+void Slider1_React(void* parent,Slider* s,SliderEvent* se){
 	if(se->eid==EVENT_PRESSED){
 		int angle = s->scrolled * 180;
 		
@@ -26,7 +26,7 @@ void Slider1_React(Slider* s,SliderEvent* se){
     	printf("Nachricht gesendet\n");
 	}
 }
-void Slider2_React(Slider* s,SliderEvent* se){
+void Slider2_React(void* parent,Slider* s,SliderEvent* se){
 	if(se->eid==EVENT_PRESSED){
 		int angle = s->scrolled * 180;
 		
@@ -38,7 +38,7 @@ void Slider2_React(Slider* s,SliderEvent* se){
     	printf("Nachricht gesendet\n");
 	}
 }
-void Slider3_React(Slider* s,SliderEvent* se){
+void Slider3_React(void* parent,Slider* s,SliderEvent* se){
 	if(se->eid==EVENT_PRESSED){
 		int angle = s->scrolled * 180;
 		
@@ -50,7 +50,7 @@ void Slider3_React(Slider* s,SliderEvent* se){
     	printf("Nachricht gesendet\n");
 	}
 }
-void Slider4_React(Slider* s,SliderEvent* se){
+void Slider4_React(void* parent,Slider* s,SliderEvent* se){
 	if(se->eid==EVENT_PRESSED){
 		int angle = s->scrolled * 180;
 		
@@ -62,7 +62,7 @@ void Slider4_React(Slider* s,SliderEvent* se){
     	printf("Nachricht gesendet\n");
 	}
 }
-void Slider5_React(Slider* s,SliderEvent* se){
+void Slider5_React(void* parent,Slider* s,SliderEvent* se){
 	if(se->eid==EVENT_PRESSED){
 		int angle = s->scrolled * 180;
 		
@@ -74,7 +74,7 @@ void Slider5_React(Slider* s,SliderEvent* se){
     	printf("Nachricht gesendet\n");
 	}
 }
-void Slider6_React(Slider* s,SliderEvent* se){
+void Slider6_React(void* parent,Slider* s,SliderEvent* se){
 	if(se->eid==EVENT_PRESSED){
 		int angle = s->scrolled * 180;
 		
